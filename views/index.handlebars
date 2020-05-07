@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col text-center">
+      <h1 class='m-5'>Account Login</h1>
+    </div>
+  </div>
+
+  <form action="/" method="POST">
+    <div class="row justify-content-center">
+      <div class="col-6 form-group" id="emailInput" style="width: 30rem;">
+        <label for="exampleFormControlInput1">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"
+          name="email">
+      </div>
+    </div>
+
+
+    <div class="row justify-content-center">
+      <div class="col-6 form-group" id="PasswordInput" style="width: 30rem;">
+        <label for="exampleFormControlInput1">Password</label>
+        <input type="Password" class="form-control" id="exampleFormControlInput1" placeholder="Password..."
+          name="password">
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <button type="submit" class="btn btn-primary mb-2">Login</button>
+    </div>
+
+    <div class="row justify-content-center">
+      {{#if response}}
+      <div class="alert alert-info text-center" role="alert" style="width: 30rem;">
+        <span class="mr-2">{{response}}</span>
+      </div>
+      {{/if}}
+    </div>
+
+  </form>
+
+
+
+</div>
